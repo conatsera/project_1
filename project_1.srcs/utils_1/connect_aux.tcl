@@ -1,0 +1,2 @@
+disconnect_net -objects [list [get_pins design_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLLAUXREFCLKLPD[0]] [get_pins design_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLLAUXREFCLKLPD[1]]]
+connect_net -hier -net [get_nets design_top_i/clk_reset_gen/clk_wiz_hpb/clk_out_50M] -objects [list [get_pins design_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLLAUXREFCLKLPD[0]] [get_pins design_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLLAUXREFCLKLPD[1]]]

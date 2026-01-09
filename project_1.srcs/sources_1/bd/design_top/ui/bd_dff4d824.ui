@@ -1,0 +1,45 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-91,-293",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port MDIO_GEM -pg 1 -lvl 0 -x 0 -y 40 -defaultsOSRD
+preplace port som240_1_connector_pl_gem2_rgmii_mdio_mdc -pg 1 -lvl 3 -x 700 -y 70 -defaultsOSRD
+preplace port GMII -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace port som240_1_connector_pl_gem2_rgmii -pg 1 -lvl 3 -x 700 -y 100 -defaultsOSRD
+preplace port MDIO_GEM1 -pg 1 -lvl 0 -x 0 -y 410 -defaultsOSRD
+preplace port som240_2_connector_pl_gem3_rgmii_mdio_mdc -pg 1 -lvl 3 -x 700 -y 450 -defaultsOSRD
+preplace port GMII1 -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace port som240_2_connector_pl_gem3_rgmii -pg 1 -lvl 3 -x 700 -y 480 -defaultsOSRD
+preplace port port-id_rx_reset -pg 1 -lvl 0 -x 0 -y 470 -defaultsOSRD
+preplace port port-id_mmcm_locked_in -pg 1 -lvl 0 -x 0 -y 440 -defaultsOSRD
+preplace port port-id_ref_clk -pg 1 -lvl 0 -x 0 -y 520 -defaultsOSRD
+preplace port port-id_gmii_clk_125m_in -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace port port-id_gmii_clk_25m_in -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_gmii_clk_2_5m_in -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
+preplace inst gmii_to_rgmii_gem2 -pg 1 -lvl 2 -x 530 -y 130 -defaultsOSRD
+preplace inst gmii_to_rgmii_gem3 -pg 1 -lvl 2 -x 530 -y 510 -defaultsOSRD
+preplace inst gmii_to_rgmii_resets -pg 1 -lvl 1 -x 170 -y 510 -defaultsOSRD
+preplace inst util_idelay_ctrl_rgmii -pg 1 -lvl 2 -x 530 -y 320 -defaultsOSRD
+preplace netloc Net 1 0 2 40 440 370
+preplace netloc bufgce_div_2_5M_BUFGCE_O 1 0 2 NJ 210 310
+preplace netloc clk_wiz_hpa_clk_out125M 1 0 2 20J 170 340
+preplace netloc clk_wiz_hpa_clk_out25M 1 0 2 20J 190 320
+preplace netloc clk_wiz_hpa_clk_out375M 1 0 2 20 580 350
+preplace netloc clk_wiz_hpa_locked 1 0 2 30J 420 380
+preplace netloc gmii_to_rgmii_0_rese_0_idelayctrl_reset 1 1 1 360 330n
+preplace netloc gmii_to_rgmii_gem2_MDIO_PHY 1 2 1 680J 70n
+preplace netloc gmii_to_rgmii_gem2_RGMII 1 2 1 NJ 100
+preplace netloc gmii_to_rgmii_gem3_MDIO_PHY 1 2 1 680J 450n
+preplace netloc gmii_to_rgmii_gem3_RGMII 1 2 1 NJ 480
+preplace netloc mpsoc_GMII_ENET2 1 0 2 NJ 70 NJ
+preplace netloc mpsoc_GMII_ENET3 1 0 2 30J 410 330J
+preplace netloc mpsoc_MDIO_ENET3 1 0 2 20J 430 NJ
+preplace netloc mpsoc_MDIO_ENET4 1 0 2 20J 50 NJ
+levelinfo -pg 1 0 170 530 700
+pagesize -pg 1 -db -bbox -sgen -170 -10 1070 650
+"
+}
+

@@ -1,0 +1,91 @@
+#include "include/dt-bindings/gpio/gpio.h"
+#include "include/dt-bindings/net/ti-dp83867.h"
+#include "include/dt-bindings/phy/phy.h"
+#include "include/dt-bindings/pinctrl/pinctrl-zynqmp.h"
+
+&{/} {
+	compatible = "xlnx,zynqmp-sk-kr260-revB",
+		     "xlnx,zynqmp-sk-kr260", "xlnx,zynqmp";
+	model = "ZynqMP KR260 revB";
+
+	aliases {
+		ethernet2 = "/axi/ethernet@ff0d0000"; /* &gem2 */
+		ethernet3 = "/axi/ethernet@ff0e0000"; /* &gem3 */
+	};
+	
+	aux_ref_clk: aux-ref-clk {
+		clock-frequency = <50000000>;
+	};
+
+	pwm_fan: pwm-fan {
+		compatible = "pwm-fan";
+		pwms = <&ttc0 0x2 0x9c40 0x1>;
+	};
+
+	reserved-memory {
+		#address-cells = <2>;
+		#size-cells = <2>;
+		ranges;
+
+		pl_ddr: buffer@20000000 {
+			compatible = "shared-dma-pool";
+			no-map;
+			reg = <0x0 0x20000000 0x0 0x10000000>;
+		};
+
+		cma_reserved: cma_reserved@800000000 {
+			compatible = "shared-dma-pool";
+			reusable;
+			reg = <0x8 0x0 0x0 0x40000000>;
+			linux,cma-default;
+		};
+   };
+};
+
+&gem2 {
+	psu_ethernet_2_mdio: mdio {
+		rgmii_gem2_gem3_gmii_to_rgmii_gem2_phy: ethernet-phy@2 {
+			#phy-cells = <1>;
+			compatible = "ethernet-phy-id2000.a231";
+			reg = <2>;
+			ti,rx-internal-delay = <DP83867_RGMIIDCTL_2_25_NS>;
+			ti,tx-internal-delay = <DP83867_RGMIIDCTL_2_75_NS>;
+			ti,fifo-depth = <DP83867_PHYCR_FIFO_DEPTH_4_B_NIB>;
+			ti,dp83867-rxctrl-strap-quirk;
+			reset-assert-us = <100>;
+			reset-deassert-us = <280>;
+			reset-gpios = <&gpio 0 GPIO_ACTIVE_LOW>;
+		};
+	};
+};
+
+&gem3 {
+	psu_ethernet_3_mdio: mdio {
+		rgmii_gem2_gem3_gmii_to_rgmii_gem3_phy: ethernet-phy@3 {
+			#phy-cells = <1>;
+			compatible = "ethernet-phy-id2000.a231";
+			reg = <3>;
+			ti,rx-internal-delay = <DP83867_RGMIIDCTL_2_25_NS>;
+			ti,tx-internal-delay = <DP83867_RGMIIDCTL_2_75_NS>;
+			ti,fifo-depth = <DP83867_PHYCR_FIFO_DEPTH_4_B_NIB>;
+			ti,dp83867-rxctrl-strap-quirk;
+			reset-assert-us = <100>;
+			reset-deassert-us = <280>;
+			reset-gpios = <&gpio 1 GPIO_ACTIVE_LOW>;
+		};
+	};
+};
+
+&psu_cortexa53_0 {
+	xlnx,pss-aux-ref-clk-freq = <50000000>;
+};
+
+&amba_pl {
+	zyxclmm_drm {
+		memory-region = <&pl_ddr>;
+	};
+};
+
+&ttc0 {
+    #pwm-cells = <0x3>;
+};

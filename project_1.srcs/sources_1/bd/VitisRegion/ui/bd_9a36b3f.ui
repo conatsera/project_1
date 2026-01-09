@@ -1,0 +1,73 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.934713",
+   "Default View_TopLeft":"261,-15",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port M_AXI_GMEM -pg 1 -lvl 6 -x 1990 -y 230 -defaultsOSRD
+preplace port S_AXI_CTRL -pg 1 -lvl 0 -x 0 -y 530 -defaultsOSRD
+preplace port M_AXI_GMEM1 -pg 1 -lvl 6 -x 1990 -y 550 -defaultsOSRD
+preplace port M_AXI_GMEM2 -pg 1 -lvl 6 -x 1990 -y 850 -defaultsOSRD
+preplace port S_BSCAN_0 -pg 1 -lvl 0 -x 0 -y 1210 -defaultsOSRD
+preplace port port-id_ext_reset -pg 1 -lvl 0 -x 0 -y 600 -defaultsOSRD
+preplace port port-id_ref_clk_300M -pg 1 -lvl 0 -x 0 -y 570 -defaultsOSRD
+preplace port port-id_ref_clk_80M -pg 1 -lvl 0 -x 0 -y 1130 -defaultsOSRD
+preplace port port-id_ext_resetn_80M -pg 1 -lvl 0 -x 0 -y 1100 -defaultsOSRD
+preplace portBus sfp_led -pg 1 -lvl 6 -x 1990 -y 20 -defaultsOSRD
+preplace portBus user_led -pg 1 -lvl 6 -x 1990 -y 70 -defaultsOSRD
+preplace portBus interrupt -pg 1 -lvl 6 -x 1990 -y 390 -defaultsOSRD
+preplace inst proc_sys_reset_ext -pg 1 -lvl 1 -x 220 -y 820 -defaultsOSRD
+preplace inst smartconnect_fpd0_pl_mem -pg 1 -lvl 2 -x 610 -y 560 -defaultsOSRD
+preplace inst proc_sys_reset_300M -pg 1 -lvl 2 -x 610 -y 730 -defaultsOSRD
+preplace inst clk_wiz_4 -pg 1 -lvl 1 -x 220 -y 1120 -defaultsOSRD
+preplace inst clk_wiz_5 -pg 1 -lvl 1 -x 220 -y 980 -defaultsOSRD
+preplace inst proc_sys_reset_640M -pg 1 -lvl 2 -x 610 -y 1310 -defaultsOSRD
+preplace inst proc_sys_reset_320M -pg 1 -lvl 2 -x 610 -y 1490 -defaultsOSRD
+preplace inst smartconnect_gmem -pg 1 -lvl 5 -x 1830 -y 230 -defaultsOSRD
+preplace inst ilconcat_0 -pg 1 -lvl 3 -x 1310 -y 390 -defaultsOSRD
+preplace inst c_counter_binary_1 -pg 1 -lvl 2 -x 610 -y 160 -defaultsOSRD
+preplace inst fit_timer_1 -pg 1 -lvl 2 -x 610 -y 290 -defaultsOSRD
+preplace inst util_reduced_logic_1 -pg 1 -lvl 2 -x 610 -y 400 -defaultsOSRD
+preplace inst ilconcat_1 -pg 1 -lvl 4 -x 1530 -y 70 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 220 -y 260 -defaultsOSRD
+preplace inst debug_bridge_0 -pg 1 -lvl 5 -x 1830 -y 1220 -defaultsOSRD
+preplace inst axi_vip_1 -pg 1 -lvl 3 -x 1310 -y 580 -defaultsOSRD
+preplace inst smartconnect_gmem1 -pg 1 -lvl 5 -x 1830 -y 550 -defaultsOSRD
+preplace inst smartconnect_gmem2 -pg 1 -lvl 5 -x 1830 -y 850 -defaultsOSRD
+preplace inst axi_vip_gmem0 -pg 1 -lvl 4 -x 1530 -y 330 -defaultsOSRD
+preplace inst axi_vip_gmem1 -pg 1 -lvl 4 -x 1530 -y 960 -defaultsOSRD
+preplace inst axi_vip_gmem2 -pg 1 -lvl 4 -x 1530 -y 600 -defaultsOSRD
+preplace netloc c_counter_binary_1_Q 1 1 2 430 70 780
+preplace netloc clk_in1_0_1 1 0 1 N 1130
+preplace netloc clk_wiz_0_clk_out300M 1 1 4 420 460 1200 660 1420 250 1660
+preplace netloc clk_wiz_4_clk_out320M 1 1 1 430 1120n
+preplace netloc clk_wiz_4_clk_out640M 1 1 1 440 1100n
+preplace netloc clk_wiz_4_locked 1 1 1 410 1140n
+preplace netloc clk_wiz_5_clk_out600M 1 0 2 40 360 400
+preplace netloc clk_wiz_5_locked 1 0 2 50 580 390
+preplace netloc ext_reset_in_0_1 1 0 2 30 710 N
+preplace netloc fit_timer_1_Interrupt 1 1 2 440 80 790
+preplace netloc ilconcat_0_dout 1 3 3 1410J 260 1650J 390 NJ
+preplace netloc ilconcat_1_dout 1 4 2 NJ 70 N
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 1 N 300
+preplace netloc proc_sys_reset_1_interconnect_aresetn 1 1 2 440 470 780
+preplace netloc proc_sys_reset_300M_peripheral_aresetn 1 2 2 1210 670 1430
+preplace netloc proc_sys_reset_ext_interconnect_aresetn 1 1 4 N 840 NJ 840 NJ 840 1680J
+preplace netloc resetn_0_1 1 0 2 40 1220 390
+preplace netloc slowest_sync_clk_0_1 1 0 5 20 570 410 50 N 50 1410 140 1640
+preplace netloc util_reduced_logic_1_Res 1 1 3 420 60 800J 60 N
+preplace netloc S_AXI_CTRL_1 1 0 2 NJ 530 N
+preplace netloc S_BSCAN_0_1 1 0 5 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ
+preplace netloc smartconnect_0_M00_AXI 1 5 1 N 230
+preplace netloc smartconnect_fpd0_pl_mem_M00_AXI 1 2 1 N 560
+preplace netloc smartconnect_gmem1_M00_AXI 1 5 1 N 550
+preplace netloc smartconnect_gmem2_M00_AXI 1 5 1 N 850
+preplace netloc axi_vip_gmem0_M_AXI 1 4 1 1630 270n
+preplace netloc axi_vip_gmem2_M_AXI 1 4 1 1670 590n
+preplace netloc axi_vip_gmem1_M_AXI 1 4 1 1690 890n
+levelinfo -pg 1 0 220 610 1310 1530 1830 1990
+pagesize -pg 1 -db -bbox -sgen -160 0 2140 1590
+"
+}
+0

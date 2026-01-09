@@ -1,0 +1,493 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Addressing View_ExpandedHierarchyInLayout":"/VitisRegion",
+   "Addressing View_Layers":"/vcu_0_vcu_host_interrupt:false|/VitisRegion/fit_timer_1_Interrupt:false|/dfx_decoupler_0_s_interrupt_INTERRUPT:false|",
+   "Addressing View_Layout":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace inst dfx_decoupler_0 -pg 1 -lvl 2 -x 620 -y 810 -defaultsOSRD
+preplace inst axi_clock_converter_1 -pg 1 -lvl 4 -x 1535 -y 1686 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 5 -x 2080 -y 260 -defaultsOSRD
+preplace inst smartconnect_hp0 -pg 1 -lvl 4 -x 1535 -y 1253 -defaultsOSRD
+preplace inst axi_clock_converter_3 -pg 1 -lvl 1 -x 170 -y 790 -defaultsOSRD
+preplace inst vcu_0 -pg 1 -lvl 2 -x 620 -y 240 -defaultsOSRD
+preplace inst smartconnect_vcu_enc -pg 1 -lvl 4 -x 1535 -y 70 -defaultsOSRD
+preplace inst smartconnect_vcu_enc1 -pg 1 -lvl 4 -x 1535 -y 290 -defaultsOSRD
+preplace inst smartconnect_hpm0_fpd -pg 1 -lvl 6 -x 2520 -y 210 -defaultsOSRD
+preplace inst smartconnect_hpm1_fpd -pg 1 -lvl 6 -x 2520 -y 460 -defaultsOSRD
+preplace inst VitisRegion -pg 1 -lvl 2 -x 620 -y 1302 -defaultsOSRD
+preplace inst axi_clock_converter_2 -pg 1 -lvl 4 -x 1535 -y 820 -defaultsOSRD
+preplace inst axi_clock_converter_4 -pg 1 -lvl 4 -x 1535 -y 440 -defaultsOSRD
+preplace inst smartconnect_hpc1 -pg 1 -lvl 4 -x 1535 -y 710 -defaultsOSRD
+preplace inst smartconnect_hpc0 -pg 1 -lvl 4 -x 1535 -y 590 -defaultsOSRD
+preplace inst VitisRegion|smartconnect_fpd0_pl_mem -pg 1 -lvl 1 -x 630 -y 1922 -defaultsOSRD
+preplace inst VitisRegion|smartconnect_gmem -pg 1 -lvl 2 -x 910 -y 1062 -defaultsOSRD
+preplace inst VitisRegion|axi_vip_0 -pg 1 -lvl 1 -x 630 -y 1122 -defaultsOSRD
+preplace inst VitisRegion|axi_vip_1 -pg 1 -lvl 2 -x 910 -y 1922 -defaultsOSRD
+preplace inst VitisRegion|smartconnect_gmem1 -pg 1 -lvl 2 -x 910 -y 1742 -defaultsOSRD
+preplace inst VitisRegion|smartconnect_gmem2 -pg 1 -lvl 2 -x 910 -y 2102 -defaultsOSRD
+preplace inst VitisRegion|axi_vip_2 -pg 1 -lvl 1 -x 630 -y 1802 -defaultsOSRD
+preplace inst VitisRegion|axi_vip_3 -pg 1 -lvl 1 -x 630 -y 2162 -defaultsOSRD
+preplace netloc Net 1 1 5 N 390n N 390n N 390n N 390n 4860
+preplace netloc Net1 1 0 4 50 770n 620J 450n 3110 490n 3370
+preplace netloc Net2 1 1 5 750 330n N 330n N 330n 3920 1150n 4860
+preplace netloc Net3 1 0 6 70 660n 660 430n N 430n 3440 410n 3860 1160n 4690
+preplace netloc Net4 1 1 3 640 460n 3090 470n 3450
+preplace netloc VitisRegion_0_interrupt 1 1 2 680 490n 3040
+preplace netloc VitisRegion_0_sfp_led 1 1 2 690 500n 3030
+preplace netloc VitisRegion_0_user_led 1 1 2 740 530n 3010
+preplace netloc bufgce_div_2_5M_BUFGCE_O 1 1 5 N 350n N 350n N 350n N 350n 4820
+preplace netloc clk_reset_gen_locked1 1 0 2 70 30n 530
+preplace netloc clk_reset_gen_peripheral_aresetn1 1 1 1 540 570n
+preplace netloc clk_wiz_clk_out_250M 1 1 4 560 360n N 360n N 360n 3940
+preplace netloc clk_wiz_hpa_clk_out125M 1 1 5 570 370n N 370n N 370n N 370n 4850
+preplace netloc clk_wiz_hpa_clk_out25M 1 1 5 600 440n N 440n 3360 420n N 420n 4770
+preplace netloc clk_wiz_hpa_clk_out375M 1 1 5 540 380n N 380n N 380n N 380n 4840
+preplace netloc clk_wiz_hpa_locked 1 1 5 660 340n N 340n N 340n N 340n 4870
+preplace netloc clk_wiz_hpb_clk_out_300M_rp 1 0 4 40 760n 650 470n 3080 480n 3400
+preplace netloc dfx_decoupler_0_decouple_status 1 2 4 3060 260n NJ 260n NJ 260n 4780J
+preplace netloc dfx_decoupler_0_rp_resetn_80M_RST 1 1 2 720 520n 3020
+preplace netloc dfx_decoupler_0_rp_resetn_RST 1 1 2 700 510n 2980
+preplace netloc dfx_decoupler_0_s_interrupt_INTERRUPT 1 2 3 670 350n N 350n N
+preplace netloc dfx_decoupler_0_s_user_led_DATA 1 2 5 3070 270n N 270n N 270n N 270n 5420
+preplace netloc ilconcat_0_dout 1 1 5 NJ 140n NJ 140n N 140n N 140n 4690
+preplace netloc ilconcat_1_dout 1 6 1 5440 1390n
+preplace netloc ilconstant_three_dout 1 4 1 3880 530n
+preplace netloc ilslice_0_Dout 1 6 1 5430 1330n
+preplace netloc ilslice_0_Dout_1 1 5 1 4730 790n
+preplace netloc ilslice_vcu_resetn_Dout 1 1 6 710 280n NJ 280n N 280n NJ 280n NJ 280n 5400
+preplace netloc mpsoc_emio_ttc0_wave_o 1 5 1 4720 970n
+preplace netloc mpsoc_pl_resetn1 1 0 6 10 10n N 10n N 10n N 10n N 10n 4700
+preplace netloc mpsoc_som240_1_connector_pl_gem2_reset 1 6 1 N 1260n
+preplace netloc mpsoc_som240_2_connector_pl_gem3_reset 1 6 1 N 1360n
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 1 610 430n
+preplace netloc proc_sys_reset_0_interconnect_aresetn1 1 5 2 4880 640n 5360
+preplace netloc proc_sys_reset_fpd_interconnect_aresetn 1 0 6 10 670n 550 400n N 400n 3380 400n N 400n 4740
+preplace netloc ref_clk_80M_1 1 1 1 580 310n
+preplace netloc som240_1_connector_hpa_clk0p_clk_1 1 0 1 10J 430n
+preplace netloc som240_2_connector_hpb_clk0p_clk_1 1 0 1 NJ 460n
+preplace netloc vcu_0_vcu_host_interrupt 1 2 3 N 150n N 150n 1090J
+preplace netloc zynq_ultra_ps_e_0_fmio_gem_tsu_clk_to_pl_bufg 1 4 2 3950 1170n 4710
+preplace netloc zynq_ultra_ps_e_0_pl_clk1 1 0 6 60 780n 670J 480n 3050J 500n 3470 450n 3830J 1180n 4870
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 6 60 20n N 20n N 20n N 20n N 20n 4790
+preplace netloc S_BSCAN_0_1 1 1 1 N 1932
+preplace netloc VitisRegion_0_M_AXI_GMEM 1 1 2 330 680 1240
+preplace netloc VitisRegion_0_M_AXI_GMEM1 1 1 2 340 690 1250
+preplace netloc VitisRegion_0_M_AXI_GMEM2 1 1 2 350 700 1260
+preplace netloc axi_clock_converter_1_M_AXI 1 3 2 1345 510 1730
+preplace netloc axi_clock_converter_2_M_AXI 1 3 2 1355 520 1720
+preplace netloc axi_clock_converter_3_M_AXI 1 1 1 N 790
+preplace netloc axi_clock_converter_4_M_AXI 1 3 2 1335 500 1720
+preplace netloc debug_bridge_0_m1_bscan 1 0 2 70 1320n 530
+preplace netloc dfx_decoupler_0_rp_s_axi_ctrl 1 1 2 360 710 1230
+preplace netloc dfx_decoupler_0_s_axi_data 1 2 2 N 780 1310
+preplace netloc dfx_decoupler_0_s_axi_data1 1 2 2 NJ 820 N
+preplace netloc dfx_decoupler_0_s_axi_data2 1 2 2 1270J 810 1320
+preplace netloc mpsoc_GMII_ENET2 1 5 1 N 240
+preplace netloc mpsoc_GMII_ENET3 1 5 1 N 280
+preplace netloc mpsoc_MDIO_ENET3 1 5 1 N 300
+preplace netloc mpsoc_MDIO_ENET4 1 5 1 N 260
+preplace netloc smartconnect_0_M00_AXI 1 1 6 360 140 NJ 140 NJ 140 NJ 140 NJ 140 2660
+preplace netloc smartconnect_hp0_M00_AXI 1 4 1 1780 250n
+preplace netloc smartconnect_hpc0_M00_AXI 1 4 1 1740 210n
+preplace netloc smartconnect_hpc1_M00_AXI 1 4 1 1760 230n
+preplace netloc smartconnect_hpm1_fpd_M00_AXI 1 1 6 320 380 NJ 380 NJ 380 NJ 380 NJ 380 2660
+preplace netloc smartconnect_hpm1_fpd_M01_AXI 1 0 7 20 370 NJ 370 NJ 370 NJ 370 1720J 390 NJ 390 2670
+preplace netloc smartconnect_vcu_enc1_M00_AXI 1 4 1 N 290
+preplace netloc smartconnect_vcu_enc_M00_AXI 1 4 1 1770J 70n
+preplace netloc vcu_0_M_AXI_DEC0 1 2 2 N 240 1350
+preplace netloc vcu_0_M_AXI_DEC1 1 2 2 N 260 1310
+preplace netloc vcu_0_M_AXI_ENC0 1 2 2 N 200 1310
+preplace netloc vcu_0_M_AXI_ENC1 1 2 2 N 220 1320
+preplace netloc vcu_0_M_AXI_MCU 1 2 3 NJ 280 1340 220 1750J
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 5 1 2380 200n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 5 1 2380 220n
+preplace netloc VitisRegion|slowest_sync_clk_0_1 1 0 2 490 1992 770
+preplace netloc VitisRegion|S_AXI_CTRL_1 1 0 1 N 1912
+preplace netloc VitisRegion|S_BSCAN_0_1 1 0 1 N 1932
+preplace netloc VitisRegion|axi_vip_0_M_AXI 1 1 1 NJ 1122
+preplace netloc VitisRegion|axi_vip_2_M_AXI 1 1 1 NJ 1802
+preplace netloc VitisRegion|axi_vip_3_M_AXI 1 1 1 NJ 2162
+preplace netloc VitisRegion|smartconnect_0_M00_AXI 1 2 1 N 1062
+preplace netloc VitisRegion|smartconnect_fpd0_pl_mem_M00_AXI 1 1 1 N 1922
+preplace netloc VitisRegion|smartconnect_gmem1_M00_AXI 1 2 1 N 1742
+preplace netloc VitisRegion|smartconnect_gmem2_M00_AXI 1 2 1 N 2102
+levelinfo -pg 1 0 170 620 1290 1535 2080 2520 2690
+levelinfo -hier VitisRegion * 630 910 *
+pagesize -pg 1 -db -bbox -sgen 0 0 2690 2280
+pagesize -hier VitisRegion -db -bbox -sgen 460 922 1080 2242
+",
+   "Addressing View_ScaleFactor":"1.0",
+   "Addressing View_TopLeft":"179,708",
+   "Default View_Layers":"/clk_reset_gen/proc_sys_reset_fpd_interconnect_aresetn:true|/proc_sys_reset_0_interconnect_aresetn1:true|/rgmii/gmii_to_rgmii_0_rese_0_idelayctrl_reset:true|/clk_reset_gen/Net4:true|/VitisRegion/proc_sys_reset_1_interconnect_aresetn:true|/clk_reset_gen/clk_wiz_clk_out_250M:true|/zynq_ultra_ps_e_0_pl_resetn0:true|/clk_reset_gen/clk_wiz_hpa_clk_out125M:true|/clk_reset_gen/clk_wiz_hpb_clk_out_100M:true|/clk_reset_gen/clk_wiz_hpa_clk_out20M_unbuf:true|/clk_reset_gen/proc_sys_reset_fpd_peripheral_aresetn:true|/vcu_0_vcu_host_interrupt:true|/VitisRegion/c_counter_binary_1_Q:true|/VitisRegion/clk_wiz_4_clk_out320M:true|/clk_reset_gen/clk_wiz_4_clk_out1:true|/dfx_decoupler_0_s_user_led_DATA:true|/mpsoc_pl_resetn1:true|/clk_reset_gen/proc_sys_reset_1_peripheral_aresetn:true|/VitisRegion/fit_timer_1_Interrupt:true|/clk_reset_gen/Net:true|/dfx_decoupler_0_s_interrupt_INTERRUPT:true|/Net3:true|/som240_2_connector_hpb_clk0p_clk_1:true|/clk_reset_gen/clk_wiz_hpb_clk_out_300M:true|/clk_reset_gen/clk_wiz_hpb_clk_out_300M_rp:true|/dfx_decoupler_0_rp_resetn_80M_RST:true|/VitisRegion/clk_wiz_5_clk_out600M:true|/VitisRegion/proc_sys_reset_ext_interconnect_aresetn:true|/VitisRegion/proc_sys_reset_300M_peripheral_aresetn:true|/clk_reset_gen/Net1:true|/clk_reset_gen/proc_sys_reset_0_interconnect_aresetn:true|/VitisRegion/proc_sys_reset_0_peripheral_aresetn:true|/som240_1_connector_hpa_clk0p_clk_1:true|/dfx_decoupler_0_rp_resetn_RST:true|/Net2:true|/VitisRegion/clk_wiz_0_clk_out300M:true|/clk_reset_gen/bufgce_div_2_5M_BUFGCE_O:true|/clk_reset_gen/clk_wiz_hpa_clk_out25M:true|/VitisRegion/clk_wiz_4_clk_out640M:true|/clk_reset_gen/clk_wiz_hpa_clk_out375M:true|",
+   "Default View_ScaleFactor":"1.92542",
+   "Default View_TopLeft":"584,1122",
+   "Display-IntfAXI4Lite":"true",
+   "Display-IntfOthers":"true",
+   "Display-IntfTypeAXIMM":"true",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeData":"true",
+   "Display-PortTypeInterrupt":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
+   "ExpandedHierarchyInLayout":"",
+   "HierExpandStatus_comment_0":"true",
+   "Interrupt and AXI-4 Lite_Layers":"/VitisRegion/clk_wiz_5_clk_out600M:false|/clk_reset_gen/clk_wiz_clk_out_250M:false|/clk_reset_gen/clk_wiz_hpa_clk_out125M:false|/clk_reset_gen/clk_wiz_hpb_clk_out_100M:false|/clk_reset_gen/clk_wiz_hpa_clk_out20M_unbuf:false|/som240_1_connector_hpa_clk0p_clk_1:false|/VitisRegion/clk_wiz_4_clk_out320M:false|/Net2:false|/clk_reset_gen/clk_wiz_4_clk_out1:false|/VitisRegion/clk_wiz_0_clk_out300M:false|/clk_reset_gen/bufgce_div_2_5M_BUFGCE_O:false|/clk_reset_gen/clk_wiz_hpa_clk_out25M:false|/VitisRegion/clk_wiz_4_clk_out640M:false|/clk_reset_gen/clk_wiz_hpa_clk_out375M:false|/Net3:false|/som240_2_connector_hpb_clk0p_clk_1:false|/clk_reset_gen/clk_wiz_hpb_clk_out_300M:false|/clk_reset_gen/clk_wiz_hpb_clk_out_300M_rp:false|/clk_reset_gen/proc_sys_reset_fpd_interconnect_aresetn:false|/proc_sys_reset_0_interconnect_aresetn1:false|/rgmii/gmii_to_rgmii_0_rese_0_idelayctrl_reset:false|/clk_reset_gen/Net4:false|/VitisRegion/proc_sys_reset_1_interconnect_aresetn:false|/VitisRegion/proc_sys_reset_ext_interconnect_aresetn:false|/VitisRegion/proc_sys_reset_300M_peripheral_aresetn:false|/zynq_ultra_ps_e_0_pl_resetn0:false|/clk_reset_gen/Net1:false|/clk_reset_gen/proc_sys_reset_0_interconnect_aresetn:false|/clk_reset_gen/proc_sys_reset_fpd_peripheral_aresetn:false|/VitisRegion/proc_sys_reset_0_peripheral_aresetn:false|/dfx_decoupler_0_rp_resetn_RST:false|/mpsoc_pl_resetn1:false|/clk_reset_gen/proc_sys_reset_1_peripheral_aresetn:false|/clk_reset_gen/Net:false|/dfx_decoupler_0_rp_resetn_80M_RST:false|/VitisRegion/c_counter_binary_1_Q:false|/dfx_decoupler_0_s_user_led_DATA:false|",
+   "Interrupt and AXI-4 Lite_ScaleFactor":"1.0",
+   "Interrupt and AXI-4 Lite_TopLeft":"-224,-216",
+   "Reduced Jogs_ExpandedHierarchyInLayout":"/mpsoc",
+   "Reduced Jogs_Layout":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port som240_1_connector_pl_gem2_rgmii_mdio_mdc -pg 1 -lvl 10 -x 6390 -y 370 -defaultsOSRD
+preplace port som240_1_connector_pl_gem2_rgmii -pg 1 -lvl 10 -x 6390 -y 400 -defaultsOSRD
+preplace port som240_2_connector_pl_gem3_rgmii_mdio_mdc -pg 1 -lvl 10 -x 6390 -y 730 -defaultsOSRD
+preplace port som240_2_connector_pl_gem3_rgmii -pg 1 -lvl 10 -x 6390 -y 810 -defaultsOSRD
+preplace port port-id_som240_2_connector_hpb_clk0p_clk -pg 1 -lvl 0 -x 0 -y 2030 -defaultsOSRD
+preplace port port-id_som240_1_connector_hpa_clk0p_clk -pg 1 -lvl 0 -x 0 -y 1610 -defaultsOSRD
+preplace portBus fan_en_b -pg 1 -lvl 10 -x 6390 -y 990 -defaultsOSRD
+preplace portBus som240_1_connector_pl_gem2_reset -pg 1 -lvl 10 -x 6390 -y 1040 -defaultsOSRD
+preplace portBus som240_2_connector_pl_gem3_reset -pg 1 -lvl 10 -x 6390 -y 1070 -defaultsOSRD
+preplace portBus som240_1_connector_User_led_tri_o -pg 1 -lvl 10 -x 6390 -y 680 -defaultsOSRD
+preplace portBus som240_1_connector_sfp_led -pg 1 -lvl 10 -x 6390 -y 650 -defaultsOSRD
+preplace inst clk_wiz_hpb -pg 1 -lvl 2 -x 750 -y 1990 -swap {0 1 3 4 5 6 7 2 8 9} -defaultsOSRD -pinY resetn 20L -pinY clk_in1 40L -pinY clk_out_250M 40R -pinY clk_out_100M 60R -pinY clk_out_125M 80R -pinY clk_out_150M 100R -pinY clk_out_500M 120R -pinY clk_out_300M 20R -pinY clk_out_25M 160R -pinY locked 180R
+preplace inst mpsoc -pg 1 -lvl 5 -x 2780 -y 40 -defaultsOSRD -pinY GMII_ENET2 330R -pinY MDIO_ENET3 350R -pinY GMII_ENET3 370R -pinY M00_AXI1 390R -pinY MDIO_ENET2 410R -pinY S_AXI_LPD 10L -pinY S_AXI_HP0_FPD 50L -pinY S_AXI_HP2_FPD 210L -pinY S_AXI_HP3_FPD 370L -pinY M_AXI_HPM1_FPD 430R -pinY M_AXI_HPM0_FPD 450R -pinY S00_AXI 510L -pinY emio_enet_tsu_clk 530L -pinY pl_resetn0 950R -pinY pl_resetn1 970R -pinY aclk1 550L -pinY aresetn2 850L -pinBusY emio_ttc0_wave_o 990R -pinBusY som240_1_connector_pl_gem2_reset 1010R -pinBusY som240_2_connector_pl_gem3_reset 1030R -pinY pl_clk0 1050R -pinBusY Dout 1110R -pinBusY pl_ps_irq0 1030L -pinBusY pl_ps_irq1 1050L -pinBusY In2 1150L
+preplace inst proc_sys_reset_fpd -pg 1 -lvl 3 -x 1470 -y 1650 -swap {3 2 0 1 4 6 7 8 5 9} -defaultsOSRD -pinY slowest_sync_clk 280L -pinY ext_reset_in 260L -pinY aux_reset_in 20L -pinY mb_debug_sys_rst 40L -pinY dcm_locked 300L -pinY mb_reset 40R -pinBusY bus_struct_reset 60R -pinBusY peripheral_reset 80R -pinBusY interconnect_aresetn 20R -pinBusY peripheral_aresetn 100R
+preplace inst clk_wiz_hpa -pg 1 -lvl 6 -x 4840 -y 1270 -swap {0 1 2 3 4 6 7 5 8} -defaultsOSRD -pinY resetn 20L -pinY clk_in1 140L -pinY clk_out20M_unbuf 20R -pinY clk_out25M 40R -pinY clk_out125M 60R -pinY clk_out375M 100R -pinY clk_out50M 120R -pinY clk_out250M 80R -pinY locked 140R
+preplace inst bufgce_div_2_5M -pg 1 -lvl 5 -x 2780 -y 1410 -defaultsOSRD -pinBusY BUFGCE_I 20L -pinBusY BUFGCE_CE 40L -pinBusY BUFGCE_O 20R -pinBusY BUFGCE_CLR 60L
+preplace inst ilconstant_zero -pg 1 -lvl 4 -x 2060 -y 1450 -defaultsOSRD -pinBusY dout 20R
+preplace inst proc_sys_reset_hpc_fpd -pg 1 -lvl 6 -x 4840 -y 1570 -swap {1 3 0 2 4 5 6 7 8 9} -defaultsOSRD -pinY slowest_sync_clk 40L -pinY ext_reset_in 80L -pinY aux_reset_in 20L -pinY mb_debug_sys_rst 60L -pinY dcm_locked 100L -pinY mb_reset 20R -pinBusY bus_struct_reset 40R -pinBusY peripheral_reset 60R -pinBusY interconnect_aresetn 80R -pinBusY peripheral_aresetn 100R
+preplace inst proc_sys_reset_lpd -pg 1 -lvl 4 -x 2060 -y 1650 -swap {3 2 0 1 4 6 7 8 5 9} -defaultsOSRD -pinY slowest_sync_clk 240L -pinY ext_reset_in 60L -pinY aux_reset_in 20L -pinY mb_debug_sys_rst 40L -pinY dcm_locked 260L -pinY mb_reset 40R -pinBusY bus_struct_reset 60R -pinBusY peripheral_reset 80R -pinBusY interconnect_aresetn 20R -pinBusY peripheral_aresetn 260R
+preplace inst proc_sys_reset_375M -pg 1 -lvl 5 -x 2780 -y 1690 -swap {1 0 3 4 2 6 7 5 8 9} -defaultsOSRD -pinY slowest_sync_clk 40L -pinY ext_reset_in 20L -pinY aux_reset_in 80L -pinY mb_debug_sys_rst 100L -pinY dcm_locked 60L -pinY mb_reset 40R -pinBusY bus_struct_reset 60R -pinBusY peripheral_reset 20R -pinBusY interconnect_aresetn 80R -pinBusY peripheral_aresetn 100R
+preplace inst ilslice_0 -pg 1 -lvl 9 -x 6200 -y 970 -defaultsOSRD -pinBusY Din 20L -pinBusY Dout 20R
+preplace inst gmii_to_rgmii_gem2 -pg 1 -lvl 6 -x 4840 -y 350 -swap {10 1 2 3 4 5 6 7 8 9 0 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 31 32 29 30 34 33 28 35 36 37 38} -defaultsOSRD -pinY MDIO_GEM 100L -pinY MDIO_PHY 20R -pinY GMII 20L -pinY RGMII 50R -pinY tx_reset 180L -pinY rx_reset 200L -pinY mmcm_locked_in 140L -pinY ref_clk_in 160L -pinY gmii_clk_125m_in 240L -pinY gmii_clk_25m_in 220L -pinY gmii_clk_2_5m_in 120L -pinY link_status 70R -pinBusY clock_speed 90R -pinY duplex_status 110R -pinBusY speed_mode 130R
+preplace inst gmii_to_rgmii_resets -pg 1 -lvl 8 -x 5850 -y 1470 -defaultsOSRD -pinY reset 40L -pinY ref_clk 60L -pinY idelayctrl_reset 20R
+preplace inst util_idelay_ctrl_rgmii -pg 1 -lvl 9 -x 6200 -y 1410 -defaultsOSRD -pinY rdy 20R -pinY ref_clk 20L -pinY rst 80L
+preplace inst gmii_to_rgmii_gem3 -pg 1 -lvl 6 -x 4840 -y 710 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 33 34 31 32 28 29 30 35 36 37 38} -defaultsOSRD -pinY MDIO_GEM 20L -pinY MDIO_PHY 20R -pinY GMII 40L -pinY RGMII 100R -pinY tx_reset 160L -pinY rx_reset 180L -pinY mmcm_locked_in 120L -pinY ref_clk_in 140L -pinY gmii_clk_125m_in 60L -pinY gmii_clk_25m_in 80L -pinY gmii_clk_2_5m_in 100L -pinY link_status 120R -pinBusY clock_speed 140R -pinY duplex_status 160R -pinBusY speed_mode 180R
+preplace inst proc_sys_reset_500M -pg 1 -lvl 6 -x 4840 -y 1750 -swap {4 2 0 1 3 5 6 7 8 9} -defaultsOSRD -pinY slowest_sync_clk 100L -pinY ext_reset_in 60L -pinY aux_reset_in 20L -pinY mb_debug_sys_rst 40L -pinY dcm_locked 80L -pinY mb_reset 20R -pinBusY bus_struct_reset 40R -pinBusY peripheral_reset 60R -pinBusY interconnect_aresetn 80R -pinBusY peripheral_aresetn 100R
+preplace inst clk_wiz_0 -pg 1 -lvl 6 -x 4840 -y 1950 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 20 19 21 22 23} -defaultsOSRD -pinY s_axi_lite 20L -pinY s_axi_aclk 40L -pinY s_axi_aresetn 80L -pinY clk_in1 60L -pinY clk_out_75M 20R -pinY clk_out_50M 60R -pinY locked 80R
+preplace inst proc_sys_reset_25M -pg 1 -lvl 6 -x 4840 -y 2130 -swap {1 4 2 3 0 5 6 7 8 9} -defaultsOSRD -pinY slowest_sync_clk 40L -pinY ext_reset_in 100L -pinY aux_reset_in 60L -pinY mb_debug_sys_rst 80L -pinY dcm_locked 20L -pinY mb_reset 20R -pinBusY bus_struct_reset 40R -pinBusY peripheral_reset 60R -pinBusY interconnect_aresetn 80R -pinBusY peripheral_aresetn 100R
+preplace inst proc_sys_reset_150M -pg 1 -lvl 6 -x 4840 -y 2710 -swap {2 0 3 4 1 5 6 7 8 9} -defaultsOSRD -pinY slowest_sync_clk 60L -pinY ext_reset_in 20L -pinY aux_reset_in 80L -pinY mb_debug_sys_rst 100L -pinY dcm_locked 40L -pinY mb_reset 20R -pinBusY bus_struct_reset 40R -pinBusY peripheral_reset 60R -pinBusY interconnect_aresetn 80R -pinBusY peripheral_aresetn 100R
+preplace inst proc_sys_reset_250M -pg 1 -lvl 7 -x 5390 -y 2490 -swap {0 3 1 2 4 6 7 8 9 5} -defaultsOSRD -pinY slowest_sync_clk 20L -pinY ext_reset_in 80L -pinY aux_reset_in 40L -pinY mb_debug_sys_rst 60L -pinY dcm_locked 180L -pinY mb_reset 40R -pinBusY bus_struct_reset 60R -pinBusY peripheral_reset 80R -pinBusY interconnect_aresetn 100R -pinBusY peripheral_aresetn 20R
+preplace inst proc_sys_reset_100M -pg 1 -lvl 6 -x 4840 -y 2490 -swap {1 4 2 3 0 5 6 7 8 9} -defaultsOSRD -pinY slowest_sync_clk 40L -pinY ext_reset_in 100L -pinY aux_reset_in 60L -pinY mb_debug_sys_rst 80L -pinY dcm_locked 20L -pinY mb_reset 20R -pinBusY bus_struct_reset 40R -pinBusY peripheral_reset 60R -pinBusY interconnect_aresetn 80R -pinBusY peripheral_aresetn 100R
+preplace inst proc_sys_reset_125M -pg 1 -lvl 6 -x 4840 -y 2310 -swap {1 4 2 3 0 5 6 7 8 9} -defaultsOSRD -pinY slowest_sync_clk 40L -pinY ext_reset_in 100L -pinY aux_reset_in 60L -pinY mb_debug_sys_rst 80L -pinY dcm_locked 20L -pinY mb_reset 20R -pinBusY bus_struct_reset 40R -pinBusY peripheral_reset 60R -pinBusY interconnect_aresetn 80R -pinBusY peripheral_aresetn 100R
+preplace inst proc_sys_reset_50M -pg 1 -lvl 9 -x 6200 -y 2110 -swap {0 4 2 3 1 5 6 7 8 9} -defaultsOSRD -pinY slowest_sync_clk 20L -pinY ext_reset_in 100L -pinY aux_reset_in 60L -pinY mb_debug_sys_rst 80L -pinY dcm_locked 40L -pinY mb_reset 20R -pinBusY bus_struct_reset 40R -pinBusY peripheral_reset 60R -pinBusY interconnect_aresetn 80R -pinBusY peripheral_aresetn 100R
+preplace inst proc_sys_reset_75M -pg 1 -lvl 9 -x 6200 -y 1930 -swap {2 4 0 1 3 5 6 7 8 9} -defaultsOSRD -pinY slowest_sync_clk 60L -pinY ext_reset_in 100L -pinY aux_reset_in 20L -pinY mb_debug_sys_rst 40L -pinY dcm_locked 80L -pinY mb_reset 20R -pinBusY bus_struct_reset 40R -pinBusY peripheral_reset 60R -pinBusY interconnect_aresetn 80R -pinBusY peripheral_aresetn 100R
+preplace inst clk_wiz_2 -pg 1 -lvl 7 -x 5390 -y 1830 -defaultsOSRD -pinY resetn 20L -pinY clk_in1 80L -pinY clk_out1 20R -pinY locked 40R
+preplace inst ilconcat_0 -pg 1 -lvl 9 -x 6200 -y 1570 -defaultsOSRD -pinBusY In0 20L -pinBusY In1 40L -pinBusY dout 20R
+preplace inst fit_timer_1 -pg 1 -lvl 8 -x 5850 -y 1670 -defaultsOSRD -pinY Clk 20L -pinY Rst 40L -pinY Interrupt 60R
+preplace inst c_counter_binary_1 -pg 1 -lvl 9 -x 6200 -y 1690 -swap {0 2 1 3} -defaultsOSRD -pinY CLK 20L -pinY CE 60L -pinY SINIT 40L -pinBusY Q 140R
+preplace inst util_reduced_logic_1 -pg 1 -lvl 8 -x 5850 -y 1810 -defaultsOSRD -pinBusY Op1 20L -pinY Res 20R
+preplace inst proc_sys_reset_50M1 -pg 1 -lvl 7 -x 5390 -y 1630 -swap {0 2 3 4 1 5 6 8 9 7} -defaultsOSRD -pinY slowest_sync_clk 20L -pinY ext_reset_in 60L -pinY aux_reset_in 80L -pinY mb_debug_sys_rst 100L -pinY dcm_locked 40L -pinY mb_reset 20R -pinBusY bus_struct_reset 40R -pinBusY peripheral_reset 100R -pinBusY interconnect_aresetn 120R -pinBusY peripheral_aresetn 80R
+preplace inst dfx_decoupler_0 -pg 1 -lvl 4 -x 2060 -y 360 -swap {266 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 334 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 0 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 368 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 82 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 232 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 198 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365 366 367 300 369 370 371 372 373 374 375 376 377 378 379 380 381 382 383 384 385 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 416 417 418 419 420 421 422 423 424 425 426 427 428 429 430 431 432 433 434 435 447 440 448 441 451 442 453 443 454 444 456 445 459 458 455 436 457 437 446 463 461 460 450 438 452 439 462 449} -defaultsOSRD -pinY s_hpm0_fpd 80L -pinY rp_hpm0_fpd 20R -pinY s_hpm1_fpd 100L -pinY rp_hpm1_fpd 40R -pinY s_hp0_fpd 60R -pinY rp_hp0_fpd 20L -pinY s_hp1_fpd 190R -pinY rp_hp1_fpd 40L -pinY s_hp2_fpd 80R -pinY rp_hp2_fpd 60L -pinY s_hp3_fpd 100R -pinY rp_hp3_fpd 180L -pinY hpm0_fpd_aclk 790L -pinY hpm0_fpd_arstn 650L -pinY hpm1_fpd_aclk 810L -pinY hpm1_fpd_arstn 670L -pinY hp0_fpd_aclk 830L -pinY hp0_fpd_arstn 690L -pinY hp1_fpd_aclk 850L -pinY hp1_fpd_arstn 710L -pinY hp2_fpd_aclk 870L -pinY hp2_fpd_arstn 730L -pinY hp3_fpd_aclk 890L -pinY hp3_fpd_arstn 750L -pinY s_ref_clk_CLK 910L -pinY rp_ref_clk_CLK 910R -pinBusY s_sfp_led_DATA 870R -pinBusY rp_sfp_led_DATA 400L -pinBusY s_user_led_DATA 890R -pinBusY rp_user_led_DATA 590L -pinY s_ext_reset_RST 770L -pinY rp_ext_reset_RST 950R -pinBusY s_ref_locked_DATA 930L -pinBusY rp_ref_locked_DATA 930R -pinY s_irq0_INTERRUPT 710R -pinY rp_irq0_INTERRUPT 610L -pinY s_irq1_INTERRUPT 730R -pinY rp_irq1_INTERRUPT 630L -pinY decouple 950L -pinY decouple_status 210R
+preplace inst VitisRegion_0 -pg 1 -lvl 2 -x 750 -y 740 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 108 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 74 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222} -defaultsOSRD -pinY S_AXI_HPM0 20L -pinY M_AXI_HP0 20R -pinY M_AXI_HP2 60R -pinY M_AXI_HP1 40R -pinY M_AXI_HP3 80R -pinY S_AXI_HPM1 40L -pinY ext_reset 60L -pinY ref_clk 750L -pinY ref_locked 770L -pinBusY sfp_led 100R -pinBusY user_led 240R -pinY irq0 440R -pinY irq1 660R
+preplace inst VitisRegion_1 -pg 1 -lvl 2 -x 750 -y 220 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 108 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 74 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 217 216 218 219 220 221 222} -defaultsOSRD -pinY S_AXI_HPM0 80L -pinY M_AXI_HP0 20R -pinY M_AXI_HP2 60R -pinY M_AXI_HP1 40R -pinY M_AXI_HP3 80R -pinY S_AXI_HPM1 100L -pinY ext_reset 140L -pinY ref_clk 120L -pinY ref_locked 160L -pinBusY sfp_led 100R -pinBusY user_led 120R -pinY irq0 140R -pinY irq1 160R
+preplace inst tmr_voter_hp0 -pg 1 -lvl 3 -x 1470 -y 40 -swap {70 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 0 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 35 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141} -defaultsOSRD -pinY S_AXI1 60L -pinY S_AXI2 20L -pinY S_AXI3 40L -pinY M_AXI 60R -pinY Clk 80L -pinBusY Compare 80R
+preplace inst tmr_voter_hp1 -pg 1 -lvl 3 -x 1470 -y 200 -swap {70 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 0 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 35 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141} -defaultsOSRD -pinY S_AXI1 60L -pinY S_AXI2 20L -pinY S_AXI3 40L -pinY M_AXI 60R -pinY Clk 80L -pinBusY Compare 80R
+preplace inst tmr_voter_hp2 -pg 1 -lvl 3 -x 1470 -y 360 -swap {70 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 0 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 35 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141} -defaultsOSRD -pinY S_AXI1 60L -pinY S_AXI2 20L -pinY S_AXI3 40L -pinY M_AXI 60R -pinY Clk 80L -pinBusY Compare 80R
+preplace inst tmr_voter_hp3 -pg 1 -lvl 3 -x 1470 -y 520 -swap {70 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 0 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 35 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141} -defaultsOSRD -pinY S_AXI1 60L -pinY S_AXI2 20L -pinY S_AXI3 40L -pinY M_AXI 20R -pinY Clk 80L -pinBusY Compare 40R
+preplace inst tmr_voter_hpm0 -pg 1 -lvl 1 -x 280 -y 460 -swap {70 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 0 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 35 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141} -defaultsOSRD -pinY M_AXI1 60R -pinY M_AXI2 20R -pinY M_AXI3 40R -pinY S_AXI 20L -pinY Clk 80L -pinBusY Compare 80R
+preplace inst tmr_voter_hpm1 -pg 1 -lvl 1 -x 280 -y 620 -swap {70 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 0 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 35 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141} -defaultsOSRD -pinY M_AXI1 160R -pinY M_AXI2 20R -pinY M_AXI3 40R -pinY S_AXI 20L -pinY Clk 40L -pinBusY Compare 180R
+preplace inst VitisRegion_2 -pg 1 -lvl 2 -x 750 -y 480 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 108 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 74 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 218 217 216 219 220 221 222} -defaultsOSRD -pinY S_AXI_HPM0 20L -pinY M_AXI_HP0 20R -pinY M_AXI_HP2 60R -pinY M_AXI_HP1 40R -pinY M_AXI_HP3 80R -pinY S_AXI_HPM1 100L -pinY ext_reset 160L -pinY ref_clk 140L -pinY ref_locked 120L -pinBusY sfp_led 100R -pinBusY user_led 120R -pinY irq0 140R -pinY irq1 160R
+preplace inst xpm_cdc_gen_0 -pg 1 -lvl 8 -x 5850 -y 2270 -swap {2 1 0} -defaultsOSRD -pinY dest_clk 40L -pinY dest_rst_out 40R -pinY src_rst 20L
+preplace inst tmr_voter_0 -pg 1 -lvl 3 -x 1470 -y 1140 -defaultsOSRD -pinY S_IRQ1 20L -pinY S_IRQ1.S_IRQ1 40L -pinY S_IRQ2 60L -pinY S_IRQ2.S_IRQ2 80L -pinY S_IRQ3 100L -pinY S_IRQ3.S_IRQ3 120L -pinY M_IRQ 20R -pinY M_IRQ.M_IRQ 40R -pinY Clk 140L -pinBusY Compare 140R
+preplace inst tmr_voter_1 -pg 1 -lvl 3 -x 1470 -y 1360 -defaultsOSRD -pinY S_IRQ1 20L -pinY S_IRQ1.S_IRQ1 40L -pinY S_IRQ2 60L -pinY S_IRQ2.S_IRQ2 80L -pinY S_IRQ3 100L -pinY S_IRQ3.S_IRQ3 120L -pinY M_IRQ 20R -pinY M_IRQ.M_IRQ 40R -pinY Clk 140L -pinBusY Compare 150R
+preplace inst clk_wiz_1 -pg 1 -lvl 8 -x 5850 -y 2390 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 25 20 22 23 24 26 19 27 28 21} -defaultsOSRD -pinY s_axi_lite 20L -pinY s_axi_aclk 40L -pinY s_axi_aresetn 120L -pinY ref_clk 80L -pinBusY clk_stop 40R -pinBusY clk_glitch 60R -pinY interrupt 80R -pinBusY clk_oor 100R -pinY clk_in1 60L -pinY locked 120R -pinY clk_out125M 140R -pinY clk_out250M 20R
+preplace inst tmr_voter_sfp_led -pg 1 -lvl 3 -x 1470 -y 720 -defaultsOSRD -pinY GPIO1 20L -pinY GPIO1.GPO1 40L -pinY GPIO2 60L -pinY GPIO2.GPO2 80L -pinY GPIO3 100L -pinY GPIO3.GPO3 120L -pinY GPIO 20R -pinY GPIO.GPO 40R -pinBusY Compare 60R
+preplace inst tmr_voter_user_led -pg 1 -lvl 3 -x 1470 -y 940 -defaultsOSRD -pinY GPIO1 20L -pinY GPIO1.GPO1 40L -pinY GPIO2 60L -pinY GPIO2.GPO2 80L -pinY GPIO3 100L -pinY GPIO3.GPO3 120L -pinY GPIO 20R -pinY GPIO.GPO 40R -pinBusY Compare 60R
+preplace inst tmr_voter_user_led1 -pg 1 -lvl 1 -x 280 -y 1040 -defaultsOSRD -pinY GPIO1 30L -pinY GPIO2 50L -pinY GPIO3 70L -pinY GPIO 30R -pinBusY Compare 50R
+preplace inst tmr_sem_0 -pg 1 -lvl 1 -x 280 -y 880 -defaultsOSRD -pinY S_AXI 30L -pinY S_AXI_ACLK 50L -pinY S_AXI_ARESETN 70L -pinY Interrupt 30R
+preplace inst tmr_manager_0 -pg 1 -lvl 7 -x 5390 -y 1110 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 20 15 16 17 18 19 14 21 22 23 24 25 26 27 28 29 30 31 32} -defaultsOSRD -pinY SLMB 20L -pinY Clk 40L -pinY Rst 60L -pinY Recover 120L -pinY LockStep_Break 20R -pinY Fatal 40R -pinY Reset 60R -pinBusY Status 80R -pinBusY Compare_0 100L -pinBusY Compare_1 80L -pinBusY Compare_2 140L -pinBusY Compare_3 160L -pinBusY Compare_4 180L -pinBusY Compare_5 200L -pinBusY Compare_6 220L -pinBusY Compare_7 240L -pinBusY Compare_8 260L -pinBusY Compare_9 280L -pinBusY To_TMR_Managers 100R -pinBusY From_TMR_Manager_1 300L -pinBusY From_TMR_Manager_2 320L -pinBusY From_TMR_Manager_3 340L
+preplace inst clk_wiz_3 -pg 1 -lvl 9 -x 6200 -y 2290 -defaultsOSRD -pinY resetn 20L -pinY clk_in1 120L -pinY clk_out1 20R -pinY locked 40R -pinY clk_out2 60R
+preplace inst mpsoc|zynq_ultra_ps_e_0 -pg 1 -lvl 2 -x 3350 -y 110 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 347 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 240 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 160 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 200 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 80 321 322 323 324 325 326 327 328 329 330 336 332 333 334 335 331 337 338 339 340 341 342 343 344 345 346 320 348 349 350 351 352 353 354 355 356 357 362 358 359 360 361 363 364 365 372 367 371 369 386 380 374 370 366 368 373 376 384 375 379 382 383 385 377 378 381} -defaultsOSRD -pinY M_AXI_HPM0_FPD 20R -pinY M_AXI_HPM1_FPD 160R -pinY M_AXI_HPM0_LPD 600R -pinY S_AXI_HP0_FPD 20L -pinY S_AXI_HP1_FPD 440L -pinY S_AXI_HP2_FPD 140L -pinY S_AXI_HP3_FPD 300L -pinY S_AXI_LPD 600L -pinY GMII_ENET2 260R -pinY MDIO_ENET2 340R -pinY GMII_ENET3 300R -pinY MDIO_ENET3 280R -pinY GPIO_0 620R -pinY GPIO_0.emio_gpio_i 640R -pinY GPIO_0.emio_gpio_o 660R -pinY maxihpm0_fpd_aclk 620L -pinY maxihpm1_fpd_aclk 640L -pinY maxihpm0_lpd_aclk 740L -pinY saxihp0_fpd_aclk 660L -pinY saxihp1_fpd_aclk 680L -pinY saxihp2_fpd_aclk 700L -pinY saxihp3_fpd_aclk 720L -pinY saxi_lpd_aclk 760L -pinBusY emio_enet2_speed_mode 680R -pinBusY emio_enet3_speed_mode 700R -pinBusY emio_enet2_tsu_inc_ctrl 880L -pinY emio_enet2_tsu_timer_cmp_val 720R -pinBusY emio_enet3_tsu_inc_ctrl 820L -pinY emio_enet3_tsu_timer_cmp_val 740R -pinY fmio_gem_tsu_clk_to_pl_bufg 1000R -pinY fmio_gem_tsu_clk_from_pl 1000L -pinY emio_enet_tsu_clk 900L -pinBusY emio_enet0_enet_tsu_timer_cnt 760R -pinY emio_enet2_ext_int_in 780L -pinY emio_enet3_ext_int_in 800L -pinBusY emio_enet2_dma_bus_width 780R -pinBusY emio_enet3_dma_bus_width 800R -pinBusY emio_ttc0_wave_o 920R -pinBusY pl_ps_irq0 960L -pinBusY pl_ps_irq1 980L -pinY pl_resetn0 880R -pinY pl_resetn1 900R -pinY pl_clk0 980R -pinY pl_clk1 820R -pinY pl_clk2 840R -pinY pl_clk3 860R
+preplace inst mpsoc|ilconstant_three -pg 1 -lvl 1 -x 2800 -y 970 -defaultsOSRD -pinBusY dout 20R
+preplace inst mpsoc|smartconnect_0 -pg 1 -lvl 3 -x 3940 -y 690 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 61 60} -defaultsOSRD -pinY S00_AXI 20L -pinY M00_AXI 20R -pinY aclk 240L -pinY aresetn 220L
+preplace inst mpsoc|ilslice_gem2_reset -pg 1 -lvl 3 -x 3940 -y 490 -defaultsOSRD -pinBusY Din 20L -pinBusY Dout 20R
+preplace inst mpsoc|ilslice_gem3_reset -pg 1 -lvl 3 -x 3940 -y 590 -defaultsOSRD -pinBusY Din 20L -pinBusY Dout 20R
+preplace inst mpsoc|ilslice_dfx_decouple -pg 1 -lvl 3 -x 3940 -y 1130 -defaultsOSRD -pinBusY Din 20L -pinBusY Dout 20R
+preplace inst mpsoc|ilconcat_0 -pg 1 -lvl 1 -x 2800 -y 1170 -swap {1 2 0 3} -defaultsOSRD -pinBusY In0 40L -pinBusY In1 60L -pinBusY In2 20L -pinBusY dout 60R
+preplace inst mpsoc|smartconnect_hpm1_fpd -pg 1 -lvl 3 -x 3940 -y 250 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 93 92} -defaultsOSRD -pinY S00_AXI 20L -pinY M00_AXI 60R -pinY aclk 60L -pinY aresetn 40L
+preplace inst mpsoc|smartconnect_hpm0_fpd -pg 1 -lvl 3 -x 3940 -y 110 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 93 92} -defaultsOSRD -pinY S00_AXI 20L -pinY M00_AXI 60R -pinY aclk 60L -pinY aresetn 40L
+preplace inst mpsoc|smartconnect_hp2 -pg 1 -lvl 1 -x 2800 -y 230 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 93 92} -defaultsOSRD -pinY S00_AXI 20L -pinY M00_AXI 20R -pinY aclk 60L -pinY aresetn 40L
+preplace inst mpsoc|smartconnect_hp0 -pg 1 -lvl 1 -x 2800 -y 70 -defaultsOSRD -pinY S00_AXI 20L -pinY M00_AXI 60R -pinY aclk 40L -pinY aresetn 60L
+preplace inst mpsoc|smartconnect_hp1 -pg 1 -lvl 1 -x 2800 -y 530 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 93 92} -defaultsOSRD -pinY S00_AXI 20L -pinY M00_AXI 20R -pinY aclk 60L -pinY aresetn 40L
+preplace inst mpsoc|smartconnect_hp3 -pg 1 -lvl 1 -x 2800 -y 390 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 93 92} -defaultsOSRD -pinY S00_AXI 20L -pinY M00_AXI 20R -pinY aclk 60L -pinY aresetn 40L
+preplace inst mpsoc|smartconnect_hp_lpd -pg 1 -lvl 1 -x 2800 -y 690 -defaultsOSRD -pinY S00_AXI 20L -pinY M00_AXI 20R -pinY aclk 40L -pinY aresetn 200L
+preplace netloc Net 1 5 3 4550 1510 NJ 1510 NJ
+preplace netloc Net1 1 6 3 NJ 2030 NJ 2030 6010
+preplace netloc Net2 1 1 2 580 160 1240
+preplace netloc Net3 1 2 1 1240 1280n
+preplace netloc Net4 1 0 1 20 540n
+preplace netloc VitisRegion_0_irq0 1 2 1 N 1180
+preplace netloc VitisRegion_0_irq1 1 2 1 N 1400
+preplace netloc VitisRegion_1_irq0 1 2 1 1040 360n
+preplace netloc VitisRegion_1_irq1 1 2 1 980 380n
+preplace netloc VitisRegion_2_irq0 1 2 1 920 620n
+preplace netloc VitisRegion_2_irq1 1 2 1 900 640n
+preplace netloc bufgce_div_2_5M_BUFGCE_O 1 5 1 4390 470n
+preplace netloc c_counter_binary_1_Q 1 7 3 5690 1890 NJ 1890 6370
+preplace netloc clk_wiz_0_clk_out_50M 1 6 3 NJ 2010 NJ 2010 5990
+preplace netloc clk_wiz_0_clk_out_75M 1 6 3 NJ 1970 NJ 1970 6030
+preplace netloc clk_wiz_2_clk_out1 1 6 3 5070 1570 5690 1630 6030
+preplace netloc clk_wiz_clk_out_250M 1 2 6 NJ 2030 1880 1970 2340 2010 4670 2090 5010 2450 NJ
+preplace netloc clk_wiz_hpa_clk_out125M 1 5 2 4670 1090 5050
+preplace netloc clk_wiz_hpa_clk_out20M_unbuf 1 4 3 2460 1370 4530J 1210 5010
+preplace netloc clk_wiz_hpa_clk_out25M 1 5 2 4650 1110 5030
+preplace netloc clk_wiz_hpa_clk_out375M 1 4 5 2440 1610 4370 1470 5090 1530 5690 1430 N
+preplace netloc clk_wiz_hpa_locked 1 4 3 2420 1550 4470 1490 5030
+preplace netloc clk_wiz_hpb_clk_out300M 1 2 4 900 2130 1840 1370 2400 1650 4410J
+preplace netloc clk_wiz_hpb_clk_out500M 1 2 5 NJ 2110 NJ 2110 NJ 2110 4630 1910 N
+preplace netloc clk_wiz_hpb_clk_out_100M 1 2 4 NJ 2050 NJ 2050 NJ 2050 4590
+preplace netloc clk_wiz_hpb_clk_out_125M 1 2 4 NJ 2070 NJ 2070 NJ 2070 4530
+preplace netloc clk_wiz_hpb_clk_out_150M 1 2 4 NJ 2090 NJ 2090 NJ 2090 4330
+preplace netloc clk_wiz_hpb_clk_out_25M 1 2 4 NJ 2150 NJ 2150 NJ 2150 4470
+preplace netloc clk_wiz_hpb_locked 1 2 5 1240 2170 1800 1990 NJ 1990 4650 2670 NJ
+preplace netloc dfx_decoupler_0_s_irq0_INTERRUPT 1 4 1 N 1070
+preplace netloc dfx_decoupler_0_s_irq1_INTERRUPT 1 4 1 N 1090
+preplace netloc dfx_decoupler_0_s_sfp_led_DATA 1 4 6 2320J 1310 4410J 650 NJ 650 NJ 650 NJ 650 NJ
+preplace netloc dfx_decoupler_0_s_user_led_DATA 1 4 6 2300J 1330 4490J 670 NJ 670 NJ 670 NJ 670 6370J
+preplace netloc ext_reset_1 1 1 4 560 700 940J 900 1780J 1390 2240
+preplace netloc fit_timer_1_Interrupt 1 8 1 N 1730
+preplace netloc gmii_to_rgmii_0_rese_0_idelayctrl_reset 1 8 1 N 1490
+preplace netloc ilconstant_zero_dout 1 4 1 NJ 1470
+preplace netloc ilslice_0_Dout 1 9 1 NJ 990
+preplace netloc mpsoc_Dout 1 3 3 1880 1530 NJ 1530 4330
+preplace netloc mpsoc_emio_ttc0_wave_o 1 5 4 4450J 990 NJ 990 NJ 990 NJ
+preplace netloc mpsoc_pl_resetn1 1 4 5 2460 1630 4350 1530 5010 1590 NJ 1590 N
+preplace netloc mpsoc_som240_2_connector_pl_gem3_reset 1 5 5 NJ 1070 NJ 1070 NJ 1070 NJ 1070 NJ
+preplace netloc proc_sys_reset_375M_mb_reset 1 5 5 NJ 1050 NJ 1050 NJ 1050 NJ 1050 6370J
+preplace netloc proc_sys_reset_500M_peripheral_aresetn 1 6 1 N 1850
+preplace netloc proc_sys_reset_50M1_peripheral_aresetn 1 7 1 N 1710
+preplace netloc proc_sys_reset_fpd_interconnect_aresetn 1 3 1 1820 1010n
+preplace netloc proc_sys_reset_lpd_interconnect_aresetn 1 4 1 2360 890n
+preplace netloc proc_sys_reset_lpd_peripheral_aresetn 1 4 2 2240 2030 NJ
+preplace netloc ref_clk_1 1 1 4 560 1590 NJ 1590 NJ 1590 2280
+preplace netloc ref_locked_1 1 1 4 600 1570 NJ 1570 NJ 1570 2260
+preplace netloc ref_locked_2 1 1 1 600 380n
+preplace netloc som240_1_connector_hpa_clk0p_clk_1 1 0 6 NJ 1610 NJ 1610 NJ 1610 NJ 1610 2380J 1590 4670J
+preplace netloc som240_2_connector_hpb_clk0p_clk_1 1 0 2 NJ 2030 NJ
+preplace netloc util_reduced_logic_1_Res 1 8 1 5990 1610n
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 8 600 1950 1020 2010 1860 2170 NJ 2170 4430 2650 5090 2210 NJ 2210 6030
+preplace netloc VitisRegion_0_sfp_led 1 2 1 1020 760n
+preplace netloc VitisRegion_1_sfp_led 1 2 1 1160 320n
+preplace netloc VitisRegion_2_sfp_led 1 2 1 1060 580n
+preplace netloc VitisRegion_0_user_led 1 2 1 N 980
+preplace netloc VitisRegion_1_user_led 1 2 1 1100 340n
+preplace netloc VitisRegion_2_user_led 1 2 1 960 600n
+preplace netloc Net5 1 7 1 5710 2310n
+preplace netloc proc_sys_reset_250M_peripheral_aresetn 1 7 1 5690 2290n
+preplace netloc tmr_voter_1_M_IRQ 1 3 1 1740 990n
+preplace netloc tmr_voter_user_led_GPO 1 3 1 1700 950n
+preplace netloc tmr_voter_sfp_led_GPO 1 3 1 N 760
+preplace netloc tmr_voter_0_M_IRQ 1 3 1 1720 970n
+preplace netloc tmr_voter_0_Compare 1 3 4 1760J 1410 2320J 1350 4510J 1190 5070
+preplace netloc tmr_voter_1_Compare 1 3 4 1700J 1550 2300J 1570 4570J 1230 5090
+preplace netloc xpm_cdc_gen_0_dest_rst_out 1 8 1 N 2310
+preplace netloc clk_wiz_1_clk_out250M 1 8 1 N 2410
+preplace netloc VitisRegion_0_M_AXI_HP0 1 2 1 1000 100n
+preplace netloc VitisRegion_0_M_AXI_HP1 1 2 1 1080 260n
+preplace netloc VitisRegion_0_M_AXI_HP2 1 2 1 1140 420n
+preplace netloc VitisRegion_0_M_AXI_HP3 1 2 1 1180 580n
+preplace netloc VitisRegion_1_M_AXI_HP0 1 2 1 900 60n
+preplace netloc VitisRegion_1_M_AXI_HP1 1 2 1 980 220n
+preplace netloc VitisRegion_1_M_AXI_HP2 1 2 1 1220 280n
+preplace netloc VitisRegion_1_M_AXI_HP3 1 2 1 1180 300n
+preplace netloc VitisRegion_2_M_AXI_HP0 1 2 1 960 80n
+preplace netloc VitisRegion_2_M_AXI_HP1 1 2 1 1020 240n
+preplace netloc VitisRegion_2_M_AXI_HP2 1 2 1 1060 400n
+preplace netloc VitisRegion_2_M_AXI_HP3 1 2 1 N 560
+preplace netloc dfx_decoupler_0_rp_hpm0_fpd 1 0 5 60 420 540J 440 1120J 680 1720J 320 2240
+preplace netloc dfx_decoupler_0_rp_hpm1_fpd 1 0 5 40 180 NJ 180 1200J 660 1700J 300 2260
+preplace netloc dfx_decoupler_0_s_hp0_fpd 1 4 1 2340 90n
+preplace netloc dfx_decoupler_0_s_hp1_fpd 1 4 1 N 550
+preplace netloc dfx_decoupler_0_s_hp2_fpd 1 4 1 2400 250n
+preplace netloc dfx_decoupler_0_s_hp3_fpd 1 4 1 2420 410n
+preplace netloc gmii_to_rgmii_gem2_MDIO_PHY 1 6 4 NJ 370 NJ 370 NJ 370 NJ
+preplace netloc gmii_to_rgmii_gem2_RGMII 1 6 4 NJ 400 NJ 400 NJ 400 NJ
+preplace netloc gmii_to_rgmii_gem3_MDIO_PHY 1 6 4 NJ 730 NJ 730 NJ 730 NJ
+preplace netloc gmii_to_rgmii_gem3_RGMII 1 6 4 NJ 810 NJ 810 NJ 810 NJ
+preplace netloc mpsoc_GMII_ENET2 1 5 1 N 370
+preplace netloc mpsoc_GMII_ENET3 1 5 1 4610 410n
+preplace netloc mpsoc_M00_AXI1 1 5 1 4590 430n
+preplace netloc mpsoc_MDIO_ENET3 1 5 1 4630 390n
+preplace netloc mpsoc_MDIO_ENET4 1 5 1 N 450
+preplace netloc tmr_voter_0_M_AXI 1 3 1 1860 100n
+preplace netloc tmr_voter_1_M_AXI 1 3 1 1780 260n
+preplace netloc tmr_voter_2_M_AXI 1 3 1 N 420
+preplace netloc tmr_voter_3_M_AXI 1 3 1 N 540
+preplace netloc tmr_voter_hpm0_M_AXI1 1 1 1 500 520n
+preplace netloc tmr_voter_hpm0_M_AXI2 1 1 1 500 300n
+preplace netloc tmr_voter_hpm0_M_AXI3 1 1 1 N 500
+preplace netloc tmr_voter_hpm1_M_AXI1 1 1 1 N 780
+preplace netloc tmr_voter_hpm1_M_AXI2 1 1 1 520 320n
+preplace netloc tmr_voter_hpm1_M_AXI3 1 1 1 540 580n
+preplace netloc mpsoc|In2_1 1 0 1 NJ 1190
+preplace netloc mpsoc|Net 1 0 3 2640 350 2980 70 3720
+preplace netloc mpsoc|Net2 1 0 3 2660 190 2960J 50 3800
+preplace netloc mpsoc|aresetn2_1 1 0 3 2660 1050 2940J 1190 3760
+preplace netloc mpsoc|clk_wiz_clk_out_250M 1 0 3 2620 650 2960 1210 3800J
+preplace netloc mpsoc|ilconcat_0_dout 1 1 2 NJ 1230 3740
+preplace netloc mpsoc|ilconstant_three_dout 1 1 1 2980 930n
+preplace netloc mpsoc|ilslice_0_Dout 1 2 1 3780 510n
+preplace netloc mpsoc|ilslice_dfx_decouple_Dout 1 3 1 NJ 1150
+preplace netloc mpsoc|ilslice_gem2_reset_Dout 1 3 1 4100J 510n
+preplace netloc mpsoc|ilslice_gem3_reset_Dout 1 3 1 4080J 610n
+preplace netloc mpsoc|pl_ps_irq0_1 1 0 2 NJ 1070 N
+preplace netloc mpsoc|pl_ps_irq1_1 1 0 2 NJ 1090 N
+preplace netloc mpsoc|zynq_ultra_ps_e_0_emio_ttc0_wave_o 1 2 2 N 1030 NJ
+preplace netloc mpsoc|zynq_ultra_ps_e_0_fmio_gem_tsu_clk_to_pl_bufg 1 1 2 2980 1170 3720
+preplace netloc mpsoc|zynq_ultra_ps_e_0_pl_clk0 1 2 2 N 1090 NJ
+preplace netloc mpsoc|zynq_ultra_ps_e_0_pl_resetn0 1 2 2 N 990 NJ
+preplace netloc mpsoc|zynq_ultra_ps_e_0_pl_resetn1 1 2 2 N 1010 NJ
+preplace netloc mpsoc|Conn1 1 0 1 N 550
+preplace netloc mpsoc|Conn2 1 2 2 N 450 NJ
+preplace netloc mpsoc|Conn3 1 2 2 N 370 NJ
+preplace netloc mpsoc|Conn4 1 2 2 N 390 NJ
+preplace netloc mpsoc|Conn5 1 2 2 N 410 NJ
+preplace netloc mpsoc|Conn9 1 3 1 4120 430n
+preplace netloc mpsoc|S_AXI_HP0_FPD_1 1 0 1 N 90
+preplace netloc mpsoc|S_AXI_HP2_FPD_1 1 0 1 N 250
+preplace netloc mpsoc|S_AXI_HP3_FPD_1 1 0 1 N 410
+preplace netloc mpsoc|smartconnect_hp0_M00_AXI 1 1 1 N 130
+preplace netloc mpsoc|smartconnect_hp1_M00_AXI 1 1 1 N 550
+preplace netloc mpsoc|smartconnect_hp2_M00_AXI 1 1 1 N 250
+preplace netloc mpsoc|smartconnect_hp3_M00_AXI 1 1 1 N 410
+preplace netloc mpsoc|smartconnect_hpm0_fpd_M00_AXI 1 3 1 4160 170n
+preplace netloc mpsoc|smartconnect_hpm1_fpd_M00_AXI 1 3 1 4140 310n
+preplace netloc mpsoc|zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 2 1 N 130
+preplace netloc mpsoc|zynq_ultra_ps_e_0_M_AXI_HPM0_LPD 1 2 1 N 710
+preplace netloc mpsoc|zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 2 1 N 270
+preplace netloc mpsoc|smartconnect_hp_lpd_M00_AXI 1 1 1 N 710
+levelinfo -pg 1 0 280 750 1470 2060 2780 4840 5390 5850 6200 6390
+levelinfo -hier mpsoc * 2800 3350 3940 *
+pagesize -pg 1 -db -bbox -sgen -290 0 6760 2870
+pagesize -hier mpsoc -db -bbox -sgen 2590 30 4190 1290
+",
+   "Reduced Jogs_ScaleFactor":"0.380513",
+   "Reduced Jogs_TopLeft":"-289,-597",
+   "commentid":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port som240_1_connector_pl_gem2_rgmii_mdio_mdc -pg 1 -lvl 6 -x 3270 -y 610 -defaultsOSRD
+preplace port som240_1_connector_pl_gem2_rgmii -pg 1 -lvl 6 -x 3270 -y 640 -defaultsOSRD
+preplace port som240_2_connector_pl_gem3_rgmii_mdio_mdc -pg 1 -lvl 6 -x 3270 -y 670 -defaultsOSRD
+preplace port som240_2_connector_pl_gem3_rgmii -pg 1 -lvl 6 -x 3270 -y 700 -defaultsOSRD
+preplace port port-id_som240_2_connector_hpb_clk0p_clk -pg 1 -lvl 0 -x 0 -y 440 -defaultsOSRD
+preplace port port-id_som240_1_connector_hpa_clk0p_clk -pg 1 -lvl 0 -x 0 -y 410 -defaultsOSRD
+preplace portBus fan_en_b -pg 1 -lvl 6 -x 3270 -y 1460 -defaultsOSRD
+preplace portBus som240_1_connector_pl_gem2_reset -pg 1 -lvl 6 -x 3270 -y 1390 -defaultsOSRD
+preplace portBus som240_2_connector_pl_gem3_reset -pg 1 -lvl 6 -x 3270 -y 1490 -defaultsOSRD
+preplace portBus som240_1_connector_User_led_tri_o -pg 1 -lvl 6 -x 3270 -y 1770 -defaultsOSRD
+preplace portBus som240_1_connector_sfp_led -pg 1 -lvl 6 -x 3270 -y 1700 -defaultsOSRD
+preplace inst ilslice_0 -pg 1 -lvl 5 -x 2960 -y 1590 -defaultsOSRD
+preplace inst rgmii -pg 1 -lvl 5 -x 2960 -y 650 -defaultsOSRD
+preplace inst dfx_decoupler_0 -pg 1 -lvl 2 -x 920 -y 1130 -defaultsOSRD
+preplace inst axi_clock_converter_1 -pg 1 -lvl 3 -x 1480 -y 1940 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 4 -x 2130 -y 940 -defaultsOSRD
+preplace inst ilconstant_three -pg 1 -lvl 3 -x 1480 -y 610 -defaultsOSRD
+preplace inst ilslice_gem2_reset -pg 1 -lvl 5 -x 2960 -y 1390 -defaultsOSRD
+preplace inst ilslice_gem3_reset -pg 1 -lvl 5 -x 2960 -y 1490 -defaultsOSRD
+preplace inst ilconcat_0 -pg 1 -lvl 1 -x 300 -y 120 -defaultsOSRD
+preplace inst smartconnect_hp0 -pg 1 -lvl 3 -x 1480 -y 1780 -defaultsOSRD
+preplace inst axi_clock_converter_3 -pg 1 -lvl 1 -x 300 -y 960 -defaultsOSRD
+preplace inst vcu_0 -pg 1 -lvl 2 -x 920 -y 760 -defaultsOSRD
+preplace inst smartconnect_vcu_enc -pg 1 -lvl 3 -x 1480 -y 740 -defaultsOSRD
+preplace inst smartconnect_vcu_enc1 -pg 1 -lvl 3 -x 1480 -y 920 -defaultsOSRD
+preplace inst ilslice_vcu_resetn -pg 1 -lvl 5 -x 2960 -y 1290 -defaultsOSRD
+preplace inst clk_reset_gen -pg 1 -lvl 1 -x 300 -y 430 -defaultsOSRD
+preplace inst debug_bridge_0 -pg 1 -lvl 1 -x 300 -y 1540 -defaultsOSRD
+preplace inst debug_bridge_1 -pg 1 -lvl 1 -x 300 -y 1680 -defaultsOSRD
+preplace inst ilconcat_1 -pg 1 -lvl 5 -x 2960 -y 1700 -defaultsOSRD
+preplace inst smartconnect_hpm0_fpd -pg 1 -lvl 5 -x 2960 -y 850 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 5 -x 2960 -y 1010 -defaultsOSRD
+preplace inst smartconnect_hpm1_fpd -pg 1 -lvl 5 -x 2960 -y 1170 -defaultsOSRD
+preplace inst axi_clock_converter_2 -pg 1 -lvl 3 -x 1480 -y 1570 -defaultsOSRD
+preplace inst axi_clock_converter_4 -pg 1 -lvl 3 -x 1480 -y 1090 -defaultsOSRD
+preplace inst smartconnect_hpc1 -pg 1 -lvl 3 -x 1480 -y 1390 -defaultsOSRD
+preplace inst smartconnect_hpc0 -pg 1 -lvl 3 -x 1480 -y 1250 -defaultsOSRD
+preplace inst VitisRegion -pg 1 -lvl 2 -x 920 -y 1560 -defaultsOSRD
+preplace netloc Net 1 1 4 N 370 N 370 N 370 2700
+preplace netloc Net1 1 0 3 40 850 590J 1380 1300
+preplace netloc Net2 1 1 4 710 510 N 510 1750 630 2550
+preplace netloc Net3 1 0 5 20 660 650 620 1320 530 1720 640 2520
+preplace netloc Net4 1 1 2 600 500 1170
+preplace netloc VitisRegion_0_interrupt 1 1 2 710 1400 1160
+preplace netloc VitisRegion_0_sfp_led 1 1 2 690 1410 1140
+preplace netloc VitisRegion_0_user_led 1 1 2 680 1420 1150
+preplace netloc bufgce_div_2_5M_BUFGCE_O 1 1 4 N 330 N 330 N 330 2680
+preplace netloc clk_reset_gen_locked1 1 0 2 60 640 530
+preplace netloc clk_reset_gen_peripheral_aresetn1 1 1 1 550 550n
+preplace netloc clk_wiz_clk_out_250M 1 1 3 650 480 N 480 1730
+preplace netloc clk_wiz_hpa_clk_out125M 1 1 4 600 460 N 460 N 460 2660
+preplace netloc clk_wiz_hpa_clk_out25M 1 1 4 N 430 N 430 N 430 2670
+preplace netloc clk_wiz_hpa_clk_out375M 1 1 4 N 350 N 350 N 350 2690
+preplace netloc clk_wiz_hpa_locked 1 1 4 N 310 N 310 N 310 2710
+preplace netloc clk_wiz_hpb_clk_out_300M_rp 1 0 3 20 840 540 1430 1290
+preplace netloc dfx_decoupler_0_decouple_status 1 2 3 1210 1690 NJ 1690 NJ
+preplace netloc dfx_decoupler_0_s_interrupt_INTERRUPT 1 2 2 1260 540 1650
+preplace netloc dfx_decoupler_0_s_user_led_DATA 1 2 4 1220 1680 N 1680 2530 1770 N
+preplace netloc ext_reset_1 1 1 2 690 1440 1170
+preplace netloc ext_resetn_80M_1 1 1 2 700 1450 1130
+preplace netloc ilconcat_0_dout 1 1 4 NJ 120 NJ 120 N 120 2530
+preplace netloc ilconcat_1_dout 1 5 1 N 1700
+preplace netloc ilconstant_three_dout 1 3 1 1640 610n
+preplace netloc ilslice_0_Dout 1 5 1 3250 1460n
+preplace netloc ilslice_0_Dout_1 1 4 1 2560 870n
+preplace netloc ilslice_vcu_resetn_Dout 1 1 5 670 470 NJ 470 NJ 470 NJ 470 3230
+preplace netloc mpsoc_emio_ttc0_wave_o 1 4 1 2540 1050n
+preplace netloc mpsoc_pl_resetn1 1 0 5 50 650 610 490 N 490 N 490 2510
+preplace netloc mpsoc_som240_1_connector_pl_gem2_reset 1 5 1 N 1390
+preplace netloc mpsoc_som240_2_connector_pl_gem3_reset 1 5 1 N 1490
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 1 630 410n
+preplace netloc proc_sys_reset_0_interconnect_aresetn1 1 4 2 2720 500 3200
+preplace netloc proc_sys_reset_fpd_interconnect_aresetn 1 0 5 30 670 560 540 1250 520 N 520 2600
+preplace netloc ref_clk_80M_1 1 1 1 570 290n
+preplace netloc som240_1_connector_hpa_clk0p_clk_1 1 0 1 20J 410n
+preplace netloc som240_2_connector_hpb_clk0p_clk_1 1 0 1 NJ 440
+preplace netloc vcu_0_vcu_host_interrupt 1 2 2 1230 500 1670J
+preplace netloc zynq_ultra_ps_e_0_fmio_gem_tsu_clk_to_pl_bufg 1 3 2 1760 650 2500
+preplace netloc zynq_ultra_ps_e_0_pl_clk1 1 0 5 50 860 640J 570 1280J 550 1690J 620 2590
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 5 70 10 N 10 N 10 N 10 2630
+preplace netloc S_AXI_CTRL_1 1 1 2 670 1390 1140
+preplace netloc S_BSCAN_0_1 1 1 1 N 1530
+preplace netloc VitisRegion_0_M_AXI_GMEM 1 1 2 700 880 1180
+preplace netloc VitisRegion_0_M_AXI_GMEM1 1 1 2 690 640 1190
+preplace netloc VitisRegion_0_M_AXI_GMEM2 1 1 2 680 630 1200
+preplace netloc axi_clock_converter_1_M_AXI 1 2 2 1320 1700 1640
+preplace netloc axi_clock_converter_2_M_AXI 1 2 2 1310 1670 1640
+preplace netloc axi_clock_converter_3_M_AXI 1 1 1 N 960
+preplace netloc axi_clock_converter_4_M_AXI 1 2 2 1320 1470 1640
+preplace netloc debug_bridge_0_m1_bscan 1 0 2 70 1610 530
+preplace netloc dfx_decoupler_0_s_axi_data 1 2 1 1230 1040n
+preplace netloc dfx_decoupler_0_s_axi_data1 1 2 1 1240J 1080n
+preplace netloc dfx_decoupler_0_s_axi_data2 1 2 1 1270J 1050n
+preplace netloc gmii_to_rgmii_gem2_MDIO_PHY 1 5 1 3250 610n
+preplace netloc gmii_to_rgmii_gem2_RGMII 1 5 1 N 640
+preplace netloc gmii_to_rgmii_gem3_MDIO_PHY 1 5 1 3250 660n
+preplace netloc gmii_to_rgmii_gem3_RGMII 1 5 1 3250 680n
+preplace netloc mpsoc_GMII_ENET2 1 4 1 2620 580n
+preplace netloc mpsoc_GMII_ENET3 1 4 1 2650 620n
+preplace netloc mpsoc_MDIO_ENET3 1 4 1 2640 600n
+preplace netloc mpsoc_MDIO_ENET4 1 4 1 2610 560n
+preplace netloc smartconnect_0_M00_AXI 1 1 5 700 420 NJ 420 NJ 420 NJ 420 3210
+preplace netloc smartconnect_hp0_M00_AXI 1 3 1 1740 770n
+preplace netloc smartconnect_hpc0_M00_AXI 1 3 1 1660 730n
+preplace netloc smartconnect_hpc1_M00_AXI 1 3 1 1700 750n
+preplace netloc smartconnect_hpm1_fpd_M00_AXI 1 1 5 660 440 NJ 440 NJ 440 NJ 440 3220
+preplace netloc smartconnect_hpm1_fpd_M01_AXI 1 0 6 60 680 620J 450 NJ 450 NJ 450 NJ 450 3240
+preplace netloc smartconnect_vcu_enc1_M00_AXI 1 3 1 1710 810n
+preplace netloc smartconnect_vcu_enc_M00_AXI 1 3 1 1680J 740n
+preplace netloc vcu_0_M_AXI_DEC0 1 2 1 1310 750n
+preplace netloc vcu_0_M_AXI_DEC1 1 2 1 1140 770n
+preplace netloc vcu_0_M_AXI_ENC0 1 2 1 N 710
+preplace netloc vcu_0_M_AXI_ENC1 1 2 1 N 730
+preplace netloc vcu_0_M_AXI_MCU 1 2 2 1300J 830 NJ
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 4 1 2580 710n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 4 1 2570 730n
+levelinfo -pg 1 0 300 920 1480 2130 2960 3270
+pagesize -pg 1 -db -bbox -sgen -290 0 3640 2040
+"
+}
+{
+   "da_board_cnt":"3",
+   "da_clkrst_cnt":"1",
+   "da_zynq_ultra_ps_e_cnt":"1"
+}

@@ -1,0 +1,60 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.920205",
+   "Default View_TopLeft":"-171,-280",
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"/mpsoc/zynq_ultra_ps_e_0|/mpsoc/ilconstant_three|/mpsoc/smartconnect_0|/mpsoc/ilslice_gem2_reset|/mpsoc/ilslice_gem3_reset|/mpsoc/ilslice_dfx_decouple|/mpsoc/ilconcat_0|/mpsoc/smartconnect_hpm1_fpd|/mpsoc/smartconnect_hpm0_fpd|/mpsoc/smartconnect_hp2|/mpsoc/smartconnect_hp0|/mpsoc/smartconnect_hp1|/mpsoc/smartconnect_hp3|",
+   "PinnedPorts":"emio_enet_tsu_clk|pl_resetn0|pl_resetn1|aclk1|aresetn2|emio_ttc0_wave_o|som240_1_connector_pl_gem2_reset|som240_2_connector_pl_gem3_reset|pl_clk0|Dout|pl_ps_irq0|pl_ps_irq1|In2|GMII_ENET2|MDIO_ENET3|GMII_ENET3|M00_AXI1|MDIO_ENET2|S_AXI_LPD|S_AXI_HP0_FPD|S_AXI_HP1_FPD|S_AXI_HP2_FPD|S_AXI_HP3_FPD|M_AXI_HPM1_FPD|M_AXI_HPM0_FPD|",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port S_AXI_HP0_FPD -pg 1 -lvl 0 -x 0 -y 230 -defaultsOSRD
+preplace port GMII_ENET2 -pg 1 -lvl 4 -x 1480 -y 620 -defaultsOSRD
+preplace port MDIO_ENET2 -pg 1 -lvl 4 -x 1480 -y 650 -defaultsOSRD
+preplace port GMII_ENET3 -pg 1 -lvl 4 -x 1480 -y 680 -defaultsOSRD
+preplace port MDIO_ENET3 -pg 1 -lvl 4 -x 1480 -y 710 -defaultsOSRD
+preplace port port-id_emio_enet_tsu_clk -pg 1 -lvl 0 -x 0 -y 780 -defaultsOSRD
+preplace port port-id_aclk1 -pg 1 -lvl 0 -x 0 -y 680 -defaultsOSRD
+preplace port port-id_aresetn -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port port-id_pl_resetn0_0 -pg 1 -lvl 4 -x 1480 -y 1050 -defaultsOSRD
+preplace port port-id_pl_resetn1_0 -pg 1 -lvl 4 -x 1480 -y 1080 -defaultsOSRD
+preplace portBus pl_ps_irq0 -pg 1 -lvl 0 -x 0 -y 980 -defaultsOSRD
+preplace portBus pl_ps_irq1 -pg 1 -lvl 0 -x 0 -y 1010 -defaultsOSRD
+preplace portBus In2 -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace portBus emio_ttc0_wave_o -pg 1 -lvl 4 -x 1480 -y 1020 -defaultsOSRD
+preplace portBus som240_1_connector_pl_gem2_reset -pg 1 -lvl 4 -x 1480 -y 750 -defaultsOSRD
+preplace portBus som240_2_connector_pl_gem3_reset -pg 1 -lvl 4 -x 1480 -y 850 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 2 -x 740 -y 810 -defaultsOSRD
+preplace inst ilconstant_three -pg 1 -lvl 1 -x 170 -y 870 -defaultsOSRD
+preplace inst ilslice_gem2_reset -pg 1 -lvl 3 -x 1320 -y 750 -defaultsOSRD
+preplace inst ilslice_gem3_reset -pg 1 -lvl 3 -x 1320 -y 850 -defaultsOSRD
+preplace inst ilslice_rp0_decouple -pg 1 -lvl 3 -x 1320 -y 1140 -defaultsOSRD
+preplace inst ilconcat_0 -pg 1 -lvl 2 -x 740 -y 80 -defaultsOSRD
+preplace inst smartconnect_hpm0_fpd -pg 1 -lvl 3 -x 1320 -y 270 -defaultsOSRD
+preplace inst smartconnect_hp0 -pg 1 -lvl 1 -x 170 -y 250 -defaultsOSRD
+preplace netloc In2_1 1 0 2 NJ 100 NJ
+preplace netloc Net 1 0 3 30J 170 370 270 N
+preplace netloc Net2 1 0 3 20 160 N 160 1140
+preplace netloc clk_wiz_clk_out_250M 1 0 2 NJ 780 310
+preplace netloc ilconcat_0_dout 1 2 1 1110 80n
+preplace netloc ilconstant_three_dout 1 1 1 360 770n
+preplace netloc ilslice_0_Dout 1 2 1 1170 730n
+preplace netloc pl_ps_irq0_1 1 0 2 NJ 980 310J
+preplace netloc pl_ps_irq1_1 1 0 2 NJ 1010 320J
+preplace netloc zynq_ultra_ps_e_0_fmio_gem_tsu_clk_to_pl_bufg 1 1 2 370 1110 1110
+preplace netloc zynq_ultra_ps_e_0_emio_ttc0_wave_o 1 2 2 1180J 1020 NJ
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 2 2 1130 1050 NJ
+preplace netloc zynq_ultra_ps_e_0_pl_resetn1 1 2 2 1120J 1080 NJ
+preplace netloc ilslice_gem2_reset_Dout 1 3 1 NJ 750
+preplace netloc ilslice_gem3_reset_Dout 1 3 1 NJ 850
+preplace netloc S_AXI_HP0_FPD_1 1 0 1 N 230
+preplace netloc smartconnect_hp0_M00_AXI 1 1 1 310 250n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 2 1 1120 250n
+preplace netloc Conn1 1 2 2 1140 620 NJ
+preplace netloc Conn2 1 2 2 1120J 650 NJ
+preplace netloc Conn3 1 2 2 1140J 630 1460J
+preplace netloc Conn4 1 2 2 1140J 690 1460J
+levelinfo -pg 1 0 170 740 1320 1480
+pagesize -pg 1 -db -bbox -sgen -180 0 1810 1200
+"
+}
+0
